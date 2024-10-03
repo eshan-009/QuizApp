@@ -4,7 +4,7 @@ const submitResults = async (req,res)=>{
     try{
 
         const {marksScored,totalMarks,userData} =  req.body
-     
+   
         const userId = userData.id
         const {topicId} = req.params
         const user = await users.findById(userId)
